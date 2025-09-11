@@ -35,3 +35,7 @@ theme = 'hugo-book'
   # Can be overwritten by same param in page frontmatter
   BookComments = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
