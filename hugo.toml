@@ -1,4 +1,4 @@
-baseURL = 'https://emil3tr.github.io'
+baseURL = 'https://emils.site'
 languageCode = 'en-us'
 title = 'Emil Straschil'
 theme = 'hugo-book'
