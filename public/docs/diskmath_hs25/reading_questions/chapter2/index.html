@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+
+  
+
+
+
+  2.1 Mathematical Statements
+  
+  #
+  
+
+
+What is a statement?
+What does the symbol $\Longrightarrow$ mean and when is $S \Longrightarrow T$ true?
+
+
+  2.2 The Concept of a Proof
+  
+  #
+  
+
+
+When do we use $\dot{\Longrightarrow}$ instead of $\Longrightarrow$?
+Describe (informally) what a proof is.
+What is the difference between a proof sketch and a formal proof?
+
+
+  2.3 Propositional Logic
+  
+  #
+  
+
+
+Explain the symbols $\lnot, \land, \lor, \rightarrow, \leftrightarrow$.
+What is a truth table? Can you sketch the truth tables for the symbols above?
+How did we define a formula? What symbols are allowed to appear in a formula? Can you think of
+an arrow we saw that is not allowed to appear in a formula?
+What does it mean for two formulas to be equivalent? What is the symbol for it?
+Lemma 2.1 is important. Can you name and write down all the eight rules? Where did you shee
+similar rules before?
+What does the symbol $\models$ mean? Is $A \models B$ a statement or
+a formula? Can you define $\equiv$ using $\models$?
+What makes a formula (un)satisfiable and what is a tautology? What is the connection
+between $F$, $\lnot F$ and these terms?
+Fill in the blanks with formula or statement:
+
+
+&ldquo;____ $\rightarrow$ ____&rdquo; is a ____
+&ldquo;____ $\Rightarrow$ ____&rdquo; is a ____
+&ldquo;____ $\models$ ____&rdquo; is a ____
+
+
+  2.4 Predicate Logic
+  
+  #
+  
+
+
+Give an example of a predicate.
+Recall the definitions of $\forall x P(x)$ and $\exists x P(x)$. What else
+needs to be specified apart from $P$?
+Using both $\forall$ and $\exists$ at least once and two different predicates $P$ and $Q$,
+construct a formula which is true for $U = \mathbb{N}$.
+Read through 2.4.8 again and do the exercise if you have not already. Then take a sheet of
+paper and try to write down all the rules you remember from that section.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter2/">
+  <meta property="og:site_name" content="Emil Straschil">
+  <meta property="og:title" content="Script Chapter 2">
+  <meta property="og:description" content="2.1 Mathematical Statements#What is a statement? What does the symbol $\Longrightarrow$ mean and when is $S \Longrightarrow T$ true? 2.2 The Concept of a Proof#When do we use $\dot{\Longrightarrow}$ instead of $\Longrightarrow$? Describe (informally) what a proof is. What is the difference between a proof sketch and a formal proof? 2.3 Propositional Logic#Explain the symbols $\lnot, \land, \lor, \rightarrow, \leftrightarrow$. What is a truth table? Can you sketch the truth tables for the symbols above? How did we define a formula? What symbols are allowed to appear in a formula? Can you think of an arrow we saw that is not allowed to appear in a formula? What does it mean for two formulas to be equivalent? What is the symbol for it? Lemma 2.1 is important. Can you name and write down all the eight rules? Where did you shee similar rules before? What does the symbol $\models$ mean? Is $A \models B$ a statement or a formula? Can you define $\equiv$ using $\models$? What makes a formula (un)satisfiable and what is a tautology? What is the connection between $F$, $\lnot F$ and these terms? Fill in the blanks with formula or statement: “____ $\rightarrow$ ____” is a ____ “____ $\Rightarrow$ ____” is a ____ “____ $\models$ ____” is a ____ 2.4 Predicate Logic#Give an example of a predicate. Recall the definitions of $\forall x P(x)$ and $\exists x P(x)$. What else needs to be specified apart from $P$? Using both $\forall$ and $\exists$ at least once and two different predicates $P$ and $Q$, construct a formula which is true for $U = \mathbb{N}$. Read through 2.4.8 again and do the exercise if you have not already. Then take a sheet of paper and try to write down all the rules you remember from that section.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Script Chapter 2 | Emil Straschil</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter2/">
+<link rel="stylesheet" href="/book.min.67d2a9a1bdc31e812f6bb1fd34fddec52867c148be64a8b149972562a302b4ce.css" integrity="sha256-Z9Kpob3DHoEva7H9NP3exShnwUi&#43;ZKixSZclYqMCtM4=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.df79005d3664139623335c8dbc0316f908eaaa9e3d046577a101e02ff704bbcf.js" integrity="sha256-33kAXTZkE5YjM1yNvAMW&#43;Qjqqp49BGV3oQHgL/cEu88=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs book-layout-">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Emil Straschil</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/" class="">Diskmath HS25 Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle" checked />
+    <label for="section-d946c0522a96442bfd949f35f0fd286f" class="flex">
+      <a role="button" class="flex-auto ">Reading Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="active">Script Chapter 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle"  />
+    <label for="section-4c080ef129e4e5895f271099460bc683" class="flex">
+      <a role="button" class="flex-auto ">Sessions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week1/" class="">Week1 - Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Script Chapter 2</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-mathematical-statements">2.1 Mathematical Statements</a></li>
+    <li><a href="#22-the-concept-of-a-proof">2.2 The Concept of a Proof</a></li>
+    <li><a href="#23-propositional-logic">2.3 Propositional Logic</a></li>
+    <li><a href="#24-predicate-logic">2.4 Predicate Logic</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article">
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+
+  <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  &#34;delimiters&#34;: [
+    {&#34;left&#34;: &#34;$$&#34;, &#34;right&#34;: &#34;$$&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;\\(&#34;, &#34;right&#34;: &#34;\\)&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\[&#34;, &#34;right&#34;: &#34;\\]&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;$&#34;, &#34;right&#34;: &#34;$&#34;, &#34;display&#34;: false}
+  ]
+});"></script>
+
+
+<h2 id="21-mathematical-statements">
+  2.1 Mathematical Statements
+  
+  <a class="anchor" href="#21-mathematical-statements">#</a>
+  
+</h2>
+<ol>
+<li>What is a <em>statement</em>?</li>
+<li>What does the symbol $\Longrightarrow$ mean and when is $S \Longrightarrow T$ true?</li>
+</ol>
+<h2 id="22-the-concept-of-a-proof">
+  2.2 The Concept of a Proof
+  
+  <a class="anchor" href="#22-the-concept-of-a-proof">#</a>
+  
+</h2>
+<ol>
+<li>When do we use $\dot{\Longrightarrow}$ instead of $\Longrightarrow$?</li>
+<li>Describe (informally) what a proof is.</li>
+<li>What is the difference between a <em>proof sketch</em> and a <em>formal proof</em>?</li>
+</ol>
+<h2 id="23-propositional-logic">
+  2.3 Propositional Logic
+  
+  <a class="anchor" href="#23-propositional-logic">#</a>
+  
+</h2>
+<ol>
+<li>Explain the symbols $\lnot, \land, \lor, \rightarrow, \leftrightarrow$.</li>
+<li>What is a <em>truth table</em>? Can you sketch the truth tables for the symbols above?</li>
+<li>How did we define a <em>formula</em>? What symbols are allowed to appear in a formula? Can you think of
+an arrow we saw that is not allowed to appear in a formula?</li>
+<li>What does it mean for two formulas to be <em>equivalent</em>? What is the symbol for it?</li>
+<li><strong>Lemma 2.1</strong> is important. Can you name and write down all the eight rules? Where did you shee
+similar rules before?</li>
+<li>What does the symbol $\models$ mean? Is $A \models B$ a statement or
+a formula? Can you define $\equiv$ using $\models$?</li>
+<li>What makes a formula <em>(un)satisfiable</em> and what is a <em>tautology</em>? What is the connection
+between $F$, $\lnot F$ and these terms?</li>
+<li>Fill in the blanks with <em>formula</em> or <em>statement</em>:</li>
+</ol>
+<ul>
+<li>&ldquo;____ $\rightarrow$ ____&rdquo; is a ____</li>
+<li>&ldquo;____ $\Rightarrow$ ____&rdquo; is a ____</li>
+<li>&ldquo;____ $\models$ ____&rdquo; is a ____</li>
+</ul>
+<h2 id="24-predicate-logic">
+  2.4 Predicate Logic
+  
+  <a class="anchor" href="#24-predicate-logic">#</a>
+  
+</h2>
+<ol>
+<li>Give an example of a <em>predicate</em>.</li>
+<li>Recall the definitions of $\forall x P(x)$ and $\exists x P(x)$. What else
+needs to be specified apart from $P$?</li>
+<li>Using both $\forall$ and $\exists$ at least once and two different predicates $P$ and $Q$,
+construct a formula which is true for $U = \mathbb{N}$.</li>
+<li>Read through <strong>2.4.8</strong> again and do the exercise if you have not already. Then take a sheet of
+paper and try to write down all the rules you remember from that section.</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/diskmath_hs25/" class="flex align-center book-icon">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Diskmath HS25 Teaching" />
+        <span>Diskmath HS25 Teaching</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/diskmath_hs25/sessions/week1/" class="flex align-center book-icon">
+        <span>Week1 - Introduction</span>
+        <img src="/svg/forward.svg" class="book-icon" alt="Next" title="Week1 - Introduction" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-mathematical-statements">2.1 Mathematical Statements</a></li>
+    <li><a href="#22-the-concept-of-a-proof">2.2 The Concept of a Proof</a></li>
+    <li><a href="#23-propositional-logic">2.3 Propositional Logic</a></li>
+    <li><a href="#24-predicate-logic">2.4 Predicate Logic</a></li>
+  </ul>
+</nav>
+
+
+
+  </div>
+</aside>
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
