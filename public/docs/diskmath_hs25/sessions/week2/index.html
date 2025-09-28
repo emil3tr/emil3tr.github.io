@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+
+  
+
+
+
+  Week 2 - Predicate Logic
+  
+  #
+  
+
+This week we recap propositional logic and discuss the formalism needed in the exercises. Then I introduce predicate logic and we practice working with quantifiers and predicates.
+
+  Resources
+  
+  #
+  
+
+
+Slides:
+Kahoot:
+
+
+  Notes on Last Exercise Sheet
+  
+  #
+  
+
+
+You only need to hand in the bonus. If you need feedback for another exercise please tell me directly, per default I will only correct the bonus.
+Read the task description carefully and make sure you satisfy everything it asks from you. If the tasks says &ldquo;argue by comparing truth tables&rdquo; you need to compute a truth table and argue with a sentence.
+Every proof should end with a sentence like &ldquo;This is what I showed and therefore I conclude the statement is true&rdquo;. Make it clear what exactly you proved and why you think you proved it.
+Use correct notation. Don&rsquo;t make up your own abbreviations. (If you do so, you need to explain them.)
+In general, your submissions this week looked very good and I could see that most of you understood the topic well [:
+
+
+  Predicate Logic
+  
+  #
+  
+
+Last week we worked a lot with propositional logic and symbols like $\lnot , \lor , \land , \rightarrow ,  A , B$. But those types of formulas are very limited in their expression. Predicate Logic adds new symbols which allow us to express more concepts in our formulas:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/sessions/week2/">
+  <meta property="og:site_name" content="Emil Straschil">
+  <meta property="og:title" content="Week2 - Predicate Logic">
+  <meta property="og:description" content="Week 2 - Predicate Logic#This week we recap propositional logic and discuss the formalism needed in the exercises. Then I introduce predicate logic and we practice working with quantifiers and predicates.
+Resources#Slides: Kahoot: Notes on Last Exercise Sheet#You only need to hand in the bonus. If you need feedback for another exercise please tell me directly, per default I will only correct the bonus. Read the task description carefully and make sure you satisfy everything it asks from you. If the tasks says “argue by comparing truth tables” you need to compute a truth table and argue with a sentence. Every proof should end with a sentence like “This is what I showed and therefore I conclude the statement is true”. Make it clear what exactly you proved and why you think you proved it. Use correct notation. Don’t make up your own abbreviations. (If you do so, you need to explain them.) In general, your submissions this week looked very good and I could see that most of you understood the topic well [: Predicate Logic#Last week we worked a lot with propositional logic and symbols like $\lnot , \lor , \land , \rightarrow , A , B$. But those types of formulas are very limited in their expression. Predicate Logic adds new symbols which allow us to express more concepts in our formulas:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Week2 - Predicate Logic | Emil Straschil</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/sessions/week2/">
+<link rel="stylesheet" href="/book.min.b3c4b69454c557ae631185bd4b91bdb7d2ffc7de2348c49069aaef1aa114cae3.css" integrity="sha256-s8S2lFTFV65jEYW9S5G9t9L/x94jSMSQaarvGqEUyuM=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c57d548b8d27d62b0169bf2075ad35794a30b1e49177c178b37f57552a0c1f6e.js" integrity="sha256-xX1Ui40n1isBab8gda01eUowseSRd8F4s39XVSoMH24=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs book-layout-">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Emil Straschil</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/" class="">Diskmath HS25 Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle"  />
+    <label for="section-d946c0522a96442bfd949f35f0fd286f" class="flex">
+      <a role="button" class="flex-auto ">Reading Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="">Script Chapter 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle" checked />
+    <label for="section-4c080ef129e4e5895f271099460bc683" class="flex">
+      <a role="button" class="flex-auto ">Sessions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week1/" class="">Week1 - Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week2/" class="active">Week2 - Predicate Logic</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week2 - Predicate Logic</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#predicate-logic">Predicate Logic</a>
+      <ul>
+        <li><a href="#negating-quantors">Negating Quantors</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article">
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+
+  <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  &#34;delimiters&#34;: [
+    {&#34;left&#34;: &#34;$$&#34;, &#34;right&#34;: &#34;$$&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;\\(&#34;, &#34;right&#34;: &#34;\\)&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\[&#34;, &#34;right&#34;: &#34;\\]&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;$&#34;, &#34;right&#34;: &#34;$&#34;, &#34;display&#34;: false}
+  ]
+});"></script>
+
+
+<h1 id="week-2---predicate-logic">
+  Week 2 - Predicate Logic
+  
+  <a class="anchor" href="#week-2---predicate-logic">#</a>
+  
+</h1>
+<p>This week we recap propositional logic and discuss the formalism needed in the exercises. Then I introduce predicate logic and we practice working with quantifiers and predicates.</p>
+<h2 id="resources">
+  Resources
+  
+  <a class="anchor" href="#resources">#</a>
+  
+</h2>
+<ul>
+<li>Slides:</li>
+<li>Kahoot:</li>
+</ul>
+<h2 id="notes-on-last-exercise-sheet">
+  Notes on Last Exercise Sheet
+  
+  <a class="anchor" href="#notes-on-last-exercise-sheet">#</a>
+  
+</h2>
+<ul>
+<li>You only need to hand in the bonus. If you need feedback for another exercise please tell me directly, per default I will only correct the bonus.</li>
+<li>Read the task description carefully and make sure you satisfy everything it asks from you. If the tasks says &ldquo;argue by comparing truth tables&rdquo; you need to compute a truth table and argue with a sentence.</li>
+<li>Every proof should end with a sentence like &ldquo;This is what I showed and therefore I conclude the statement is true&rdquo;. Make it clear what exactly you proved and why you think you proved it.</li>
+<li>Use correct notation. Don&rsquo;t make up your own abbreviations. (If you do so, you need to explain them.)</li>
+<li>In general, your submissions this week looked very good and I could see that most of you understood the topic well [:</li>
+</ul>
+<h2 id="predicate-logic">
+  Predicate Logic
+  
+  <a class="anchor" href="#predicate-logic">#</a>
+  
+</h2>
+<p>Last week we worked a lot with propositional logic and symbols like $\lnot , \lor , \land , \rightarrow ,  A , B$. But those types of formulas are very limited in their expression. <strong>Predicate Logic</strong> adds new symbols which allow us to express more concepts in our formulas:</p>
+<p><strong>Predicates</strong> are functions $U^k \rightarrow {0,1}$. They take k values from the universe $U$ and then give a truth value depending on them. Whenever we want to work with predicates we need to specify the <strong>universe</strong> we are working in.</p>
+<blockquote class="book-hint info">
+<p>An easy way to define a predicate is specifying when exactly it yields true. For example
+$$
+P(x)=1 \Longleftrightarrow x \thinspace \text{is prime}
+$$
+defines a precidate P that gives true exactly when its input is prime.</p>
+</blockquote>
+<blockquote class="book-hint warning">
+<p>The universe is very important! Interpreting the formula $\forall x \exists y (y &lt; x)$ with $U=\mathbb{N}$ or $U=\mathbb{Z}$ makes a big difference.</p>
+</blockquote>
+<p><strong>Quantifiers</strong> allow us to reason about the elements in the universe:</p>
+<ul>
+<li>$\forall x P(x)$ means &ldquo;$P(x)$ is true <em>for all</em> $x$ in $U$&rdquo;</li>
+<li>$\exists x P(x)$ means &ldquo;there exists some (at least one) $x$ in $U$ for which $P(x)$ is true.</li>
+</ul>
+<blockquote class="book-hint warning">
+<p>$\exists x$ does <strong>not</strong> mean &ldquo;exactly one&rdquo;</p>
+</blockquote>
+<h3 id="negating-quantors">
+  Negating Quantors
+  
+  <a class="anchor" href="#negating-quantors">#</a>
+  
+</h3>
+<p>When we negate a quantor, we pull the $\lnot$ inside and change the quantor. So
+$$ \lnot \forall x P(x) \equiv \exists x \lnot P(x) $$
+and
+$$ \lnot \exists x P(x) \equiv \forall x \lnot P(x) $$</p>
+<blockquote class="book-hint info">
+<p>Make sure to read the chapters in the script about predicate logic. If you need some more practice, look at <a href="https://discmath.ch/content/ch2/predicate-logic">the page on discmath.ch</a></p>
+</blockquote>
+<h2 id="exercise-sheet-recommendations">
+  Exercise Sheet Recommendations
+  
+  <a class="anchor" href="#exercise-sheet-recommendations">#</a>
+  
+</h2>
+<p>All exercises this week are important! <strong>2.4</strong> is a very fun riddle, but don&rsquo;t worry if you cannot solve it. For <strong>2.3</strong>, make sure that you only apply <strong>one</strong> rule per step and apply them <strong>exactly</strong> as in Lemma 2.1. Specifically:</p>
+<ul>
+<li>Double negation ($\lnot \lnot A \equiv A$) is a rule.</li>
+<li>Associativity is a rule. You cannot just reorder brackets.</li>
+<li>The rules in Lemma 2.1 all have a direction. If the rule says $A \lor (A \land B) \equiv A$ then it says exactly that, and <strong>not</strong> $(A \land B) \lor A \equiv A$.</li>
+</ul>
+<p>Also read carefully exactly what requirements your final formula needs to fulfill. The task is very doable, so be sure to be exact so you get your well-deserved bonus points.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/diskmath_hs25/sessions/week1/" class="flex align-center">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Week1 - Introduction" />
+        <span>Week1 - Introduction</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#predicate-logic">Predicate Logic</a>
+      <ul>
+        <li><a href="#negating-quantors">Negating Quantors</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </div>
+</aside>
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
