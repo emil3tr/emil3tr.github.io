@@ -11,6 +11,7 @@ This week we recap propositional logic and discuss the formalism needed in the e
 
 + Slides:
 + Kahoot:
++ Exercises: 
 
 ## Notes on Last Exercise Sheet
 
@@ -18,6 +19,7 @@ This week we recap propositional logic and discuss the formalism needed in the e
 + Read the task description carefully and make sure you satisfy everything it asks from you. If the tasks says "argue by comparing truth tables" you need to compute a truth table and argue with a sentence.
 + Every proof should end with a sentence like "This is what I showed and therefore I conclude the statement is true". Make it clear what exactly you proved and why you think you proved it.
 + Use correct notation. Don't make up your own abbreviations. (If you do so, you need to explain them.)
++ When you do truth tables, start with 000 at the top and end with 111 at the bottom (convention).
 + In general, your submissions this week looked very good and I could see that most of you understood the topic well [:
 
 ## Predicate Logic
