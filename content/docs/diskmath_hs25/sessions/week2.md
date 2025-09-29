@@ -9,9 +9,9 @@ This week we recap propositional logic and discuss the formalism needed in the e
 
 ## Resources
 
-+ Slides:
-+ Kahoot:
-+ Exercises: 
++ Slides: [pdf](/dm25_resources/week2/slides.pdf)
++ Kahoot: [link](https://create.kahoot.it/share/dm-week1and2/63789ddd-617d-4d85-81da-33e8c8c4ff93)
++ Exercises: [pdf](/dm25_resources/week2/exercises.pdf)
 
 ## Notes on Last Exercise Sheet
 
