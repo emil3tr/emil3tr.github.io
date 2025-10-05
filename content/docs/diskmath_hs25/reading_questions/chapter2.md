@@ -43,3 +43,12 @@ needs to be specified apart from $P$?
 construct a formula which is true for $U = \mathbb{N}$.
 4. Read through **2.4.8** again and do the exercise if you have not already. Then take a sheet of
 paper and try to write down all the rules you remember from that section.
+
+## 2.6 Proof Patterns
+
+1. Explain how an *indirect proof* works.
+2. What is a *Modus Ponens*? Can you show with propositional logic why it works?
+3. What steps does a proof by *case distinction* involve?
+4. Show with propositional logic why a proof by *contradiction* works. How do you use this proof technique in prectice?
+5. Explain intuitively and in your own words to yourself what a proof by *induction* is and why it works.
+6. What is the *pigeonhole principle*?
