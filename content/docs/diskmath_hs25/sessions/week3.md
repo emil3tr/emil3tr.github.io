@@ -12,6 +12,7 @@ This week we focus a lot on proof patterns since it is a **very** important topi
 + Slides: [pdf](/dm25_resources/week3/slides.pdf)
 + Proof Examples: [pdf](/dm25_resources/week3/proofexamples.pdf)
 + Kahoot: [link](https://create.kahoot.it/details/976378f9-ef78-4bab-b804-4d0534633cd9) made by Tobias Steinbrecher <3
++ Statements vs Formulas: [pdf](/dm25_resources/week3/aussagen_formeln.pdf) (in German)
 
 ## Notes on Last Exercise Sheet
 
