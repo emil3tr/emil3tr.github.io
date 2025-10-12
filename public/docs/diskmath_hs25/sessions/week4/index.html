@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+
+  
+
+
+
+  Week4 - Sets
+  
+  #
+  
+
+This week we introduce sets and the basic set operations. Then we practive proving properties / equalities of sets and talk about relations a bit.
+
+  Resources
+  
+  #
+  
+
+
+Feedback Form: link
+Slides:
+Kahoot: link
+Exercises: pdf
+
+
+  Notes on Last Exercise Sheet
+  
+  #
+  
+
+
+Overall the submissions were quite good, most problems were not about understanding but presentation.
+You should always use brackets to make the precedence in your formulas clear.
+Use the correct arrows (look at week 3 for a guide).
+Read the task carefully! If it says &ldquo;do it this way&rdquo; then you have to do it this way.
+Explain what you are doing! It is not enough if the solution makes sense in you head. A proof needs to be exact and cannot leave room for interpretation.
+Be careful about restrictions in the exercise. You need to be precise in Diskmath! If &ldquo;&lt;&rdquo; is a predicate does not mean that &ldquo;&gt;&rdquo; is also one.
+You proof should begin with &ldquo;We prove &hellip; by showing &hellip;&rdquo; and end with &ldquo;This proves the statement by &hellip;&rdquo;. If you cannot describe (or at least have a general idea about) 1) what you want to prove 2) what you need to do to prove it 3) how you are going to do that, then you should not start writing the proof yet.
+
+
+  About Sets
+  
+  #
+  
+
+Sets are some of the most important objects in mathematics. A lot of things (like the natural numbers) are derived from set theory.
+If you want to read more on how we define sets, you can look at discmath.ch or search for &ldquo;ZFK Axioms&rdquo; online.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/sessions/week4/">
+  <meta property="og:site_name" content="Emil Straschil">
+  <meta property="og:title" content="Week4 - Sets">
+  <meta property="og:description" content="Week4 - Sets#This week we introduce sets and the basic set operations. Then we practive proving properties / equalities of sets and talk about relations a bit.
+Resources#Feedback Form: link Slides: Kahoot: link Exercises: pdf Notes on Last Exercise Sheet#Overall the submissions were quite good, most problems were not about understanding but presentation. You should always use brackets to make the precedence in your formulas clear. Use the correct arrows (look at week 3 for a guide). Read the task carefully! If it says “do it this way” then you have to do it this way. Explain what you are doing! It is not enough if the solution makes sense in you head. A proof needs to be exact and cannot leave room for interpretation. Be careful about restrictions in the exercise. You need to be precise in Diskmath! If “&lt;” is a predicate does not mean that “&gt;” is also one. You proof should begin with “We prove … by showing …” and end with “This proves the statement by …”. If you cannot describe (or at least have a general idea about) 1) what you want to prove 2) what you need to do to prove it 3) how you are going to do that, then you should not start writing the proof yet. About Sets#Sets are some of the most important objects in mathematics. A lot of things (like the natural numbers) are derived from set theory. If you want to read more on how we define sets, you can look at discmath.ch or search for “ZFK Axioms” online.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Week4 - Sets | Emil Straschil</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/sessions/week4/">
+<link rel="stylesheet" href="/book.min.b3c4b69454c557ae631185bd4b91bdb7d2ffc7de2348c49069aaef1aa114cae3.css" integrity="sha256-s8S2lFTFV65jEYW9S5G9t9L/x94jSMSQaarvGqEUyuM=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.c8ff7d178376aaf1c9e0c1d1b05e793b2392fe93cc72bca87e0aa82105f2d45a.js" integrity="sha256-yP99F4N2qvHJ4MHRsF55OyOS/pPMcryofgqoIQXy1Fo=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs book-layout-">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Emil Straschil</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/" class="">Diskmath HS25 Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle"  />
+    <label for="section-d946c0522a96442bfd949f35f0fd286f" class="flex">
+      <a role="button" class="flex-auto ">Reading Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="">Script Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter3/" class="">Script Chapter 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle" checked />
+    <label for="section-4c080ef129e4e5895f271099460bc683" class="flex">
+      <a role="button" class="flex-auto ">Sessions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week1/" class="">Week1 - Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week2/" class="">Week2 - Predicate Logic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week3/" class="">Week3 - Proof Patterns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week4/" class="active">Week4 - Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week4 - Sets</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#about-sets">About Sets</a>
+      <ul>
+        <li><a href="#the-powerset">The Powerset</a></li>
+      </ul>
+    </li>
+    <li><a href="#proving-set-properties">Proving Set properties</a>
+      <ul>
+        <li><a href="#showing-a-is-subset-of-b">Showing A is Subset of B</a></li>
+        <li><a href="#showing-a--b">Showing A = B</a></li>
+        <li><a href="#using-logic">Using Logic</a></li>
+      </ul>
+    </li>
+    <li><a href="#relations">Relations</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article">
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+
+  <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  &#34;delimiters&#34;: [
+    {&#34;left&#34;: &#34;$$&#34;, &#34;right&#34;: &#34;$$&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;\\(&#34;, &#34;right&#34;: &#34;\\)&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\[&#34;, &#34;right&#34;: &#34;\\]&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;$&#34;, &#34;right&#34;: &#34;$&#34;, &#34;display&#34;: false}
+  ]
+});"></script>
+
+
+<h1 id="week4---sets">
+  Week4 - Sets
+  
+  <a class="anchor" href="#week4---sets">#</a>
+  
+</h1>
+<p>This week we introduce sets and the basic set operations. Then we practive proving properties / equalities of sets and talk about relations a bit.</p>
+<h2 id="resources">
+  Resources
+  
+  <a class="anchor" href="#resources">#</a>
+  
+</h2>
+<ul>
+<li>Feedback Form: <a href="https://docs.google.com/forms/d/e/1FAIpQLScMBTx1By4t7mXx528I7nb5h_opOEFm7qCXl9oZ3G9RFjT87Q/viewform?usp=header">link</a></li>
+<li>Slides:</li>
+<li>Kahoot: <a href="https://create.kahoot.it/details/29670f94-2d08-4235-a7e8-a3d7f869eb05?drawer=">link</a></li>
+<li>Exercises: <a href="/dm25_resources/week4/exercises.pdf">pdf</a></li>
+</ul>
+<h2 id="notes-on-last-exercise-sheet">
+  Notes on Last Exercise Sheet
+  
+  <a class="anchor" href="#notes-on-last-exercise-sheet">#</a>
+  
+</h2>
+<ul>
+<li>Overall the submissions were quite good, most problems were not about understanding but presentation.</li>
+<li>You should always use brackets to make the precedence in your formulas clear.</li>
+<li>Use the correct arrows (look at week 3 for a guide).</li>
+<li><strong>Read the task carefully!</strong> If it says &ldquo;do it this way&rdquo; then you have to do it this way.</li>
+<li><strong>Explain what you are doing!</strong> It is not enough if the solution makes sense in you head. A proof needs to be exact and cannot leave room for interpretation.</li>
+<li>Be careful about restrictions in the exercise. <strong>You need to be precise in Diskmath!</strong> If &ldquo;&lt;&rdquo; is a predicate does not mean that &ldquo;&gt;&rdquo; is also one.</li>
+<li>You proof should begin with &ldquo;We prove &hellip; by showing &hellip;&rdquo; and end with &ldquo;This proves the statement by &hellip;&rdquo;. If you cannot describe (or at least have a general idea about) 1) what you want to prove 2) what you need to do to prove it 3) how you are going to do that, then you should not start writing the proof yet.</li>
+</ul>
+<h2 id="about-sets">
+  About Sets
+  
+  <a class="anchor" href="#about-sets">#</a>
+  
+</h2>
+<p>Sets are some of the most important objects in mathematics. A lot of things (like the natural numbers) are derived from set theory.
+If you want to read more on how we define sets, you can look at <a href="https://discmath.ch/content/ch3/sets">discmath.ch</a> or search for &ldquo;ZFK Axioms&rdquo; online.</p>
+<p>So what is a <em>set</em>? For us, the hintrmal definition &ldquo;a collection of well defined objects&rdquo; should be enough. We write $a \in A$ if $a$ is an element of $A$.</p>
+<blockquote class="book-hint warning">
+<p>A set can only contain each element <strong>once</strong>. This means an object is either inside the set or not.</p>
+</blockquote>
+<blockquote class="book-hint default">
+<p>The script contains a very good explanation for the <em>set operations</em> like $\subseteq$, $\cup$, &hellip; Make sure that you not only understand them intuitively, but also the formal definitions.</p>
+</blockquote>
+<h3 id="the-powerset">
+  The Powerset
+  
+  <a class="anchor" href="#the-powerset">#</a>
+  
+</h3>
+<p>One of the more difficult set operations is the powerset of a set.</p>
+<blockquote class="book-hint default">
+<p>We define the powerset of a set $A$ as:
+$$
+S \in P(A) \Longleftrightarrow S \subseteq A
+$$
+In words: &ldquo;the powerset of A contains all subsets of A&rdquo;.</p>
+</blockquote>
+<p>Note that the powerset is a <strong>set</strong> which contains <strong>sets</strong>. It has the following interesting properties:</p>
+<ul>
+<li>$A \in P(A)$</li>
+<li>$\varnothing \in P(A)$ for any set $A$</li>
+<li>$A$ is <strong>not</strong> necessarily a subset of $P(A)$! $P(A)$ contains <strong>sets</strong>, which contain elements of $A$. But it
+does <strong>not</strong> (necessarily) contain the elements of $A$.</li>
+<li>$|A| = k \implies |P(A)| = 2^{k}$</li>
+</ul>
+<h2 id="proving-set-properties">
+  Proving Set properties
+  
+  <a class="anchor" href="#proving-set-properties">#</a>
+  
+</h2>
+<h3 id="showing-a-is-subset-of-b">
+  Showing A is Subset of B
+  
+  <a class="anchor" href="#showing-a-is-subset-of-b">#</a>
+  
+</h3>
+<p>To show that $A$ is a subset of $B$, we need to show that every element in $A$ is also in $B$. The easiest way
+of doing this is by taking an arbitrary but fixed element from $A$ and then showing that it is also in $B$.
+This would look something like:</p>
+<blockquote class="book-hint default">
+<p>Let $x$ in A be arbitrary.
+$$
+\begin{align*}
+&amp; x \in A \\
+\implies &amp; \dots \\
+\implies &amp; \dots \\
+\implies &amp; x \in B
+\end{align*}
+$$</p>
+</blockquote>
+<blockquote class="book-hint warning">
+<p>When we say &ldquo;let x be arbitrary but fixed&rdquo;, then we mean that we take any element of the set. This means that
+all of your steps afterwards have to work for any element of the set!</p>
+</blockquote>
+<h3 id="showing-a--b">
+  Showing A = B
+  
+  <a class="anchor" href="#showing-a--b">#</a>
+  
+</h3>
+<p>There are two ways of showing $A = B$. The first one uses a very useful statement from the script:</p>
+<p>$$
+A = B \Longleftrightarrow A \subseteq B \land B \subseteq A
+$$</p>
+<p>This means if we need to show that $A = B$ we can simply show both $A \subseteq B$ and $B \subseteq A$ as above.</p>
+<p>The second way is by showing directly that any element in $A$ is also in $B$ and vice versa. A lot of times this also
+works but might be a little bit more difficult. We let $x$ be arbitrary and show:</p>
+<blockquote class="book-hint default">
+<p>$$
+\begin{align*}
+&amp; x \in A \\
+\Longleftrightarrow &amp; \dots \\
+\Longleftrightarrow &amp; \dots \\
+\Longleftrightarrow &amp; x \in B
+\end{align*}
+$$</p>
+</blockquote>
+<p>Note that for this type of proof <strong>all</strong> your implications need to be double-sided! So you need to make sure that
+all rows imply the row above and below it!</p>
+<blockquote class="book-hint default">
+<p>You can find an example for this in the exercises.</p>
+</blockquote>
+<h3 id="using-logic">
+  Using Logic
+  
+  <a class="anchor" href="#using-logic">#</a>
+  
+</h3>
+<p>In a lot of cases we can use propositional logic to prove statements regarding sets. Those proofs will mostly follow the same pattern:</p>
+<ol>
+<li>Use the definitions to transform a statement or set from set-language into logic-language.</li>
+<li>Use propositional logic results to refactor the statement or set</li>
+<li>Use the defintions again to get back to set-language</li>
+</ol>
+<p>A simple example:</p>
+<blockquote class="book-hint default">
+<p>Say we want to work with the set $B \cup (C \setminus A)$. Now:</p>
+<p>$$
+\begin{align*}
+&amp; x \in B \cup (C \setminus A) \\
+\implies &amp; x \in B \lor x \in (C \setminus A) \\
+\implies &amp; x \in B \lor (x \in C \land \lnot(x \in A))
+\end{align*}
+$$</p>
+<p>Now we can use Lemma 2.1 to refactor the statement and then transform it into a set again with the definitions.</p>
+</blockquote>
+<h2 id="relations">
+  Relations
+  
+  <a class="anchor" href="#relations">#</a>
+  
+</h2>
+<p>Look at <a href="https://discmath.ch/content/ch3/relations">discmath.ch</a>.</p>
+<h2 id="exercise-sheet-recommendations">
+  Exercise Sheet Recommendations
+  
+  <a class="anchor" href="#exercise-sheet-recommendations">#</a>
+  
+</h2>
+<p>Do all the exercises! If you have to leave out some, then skip <strong>4.1</strong> and <strong>4.7</strong>, but otherwise try to at least think about all the exercises, because they will give you really good intuition about sets!</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/diskmath_hs25/sessions/week3/" class="flex align-center">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Week3 - Proof Patterns" />
+        <span>Week3 - Proof Patterns</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#about-sets">About Sets</a>
+      <ul>
+        <li><a href="#the-powerset">The Powerset</a></li>
+      </ul>
+    </li>
+    <li><a href="#proving-set-properties">Proving Set properties</a>
+      <ul>
+        <li><a href="#showing-a-is-subset-of-b">Showing A is Subset of B</a></li>
+        <li><a href="#showing-a--b">Showing A = B</a></li>
+        <li><a href="#using-logic">Using Logic</a></li>
+      </ul>
+    </li>
+    <li><a href="#relations">Relations</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </div>
+</aside>
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
