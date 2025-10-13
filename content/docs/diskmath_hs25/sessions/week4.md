@@ -10,9 +10,10 @@ This week we introduce sets and the basic set operations. Then we practive provi
 ## Resources
 
 + Feedback Form: [link](https://docs.google.com/forms/d/e/1FAIpQLScMBTx1By4t7mXx528I7nb5h_opOEFm7qCXl9oZ3G9RFjT87Q/viewform?usp=header)
-+ Slides:
++ Slides: [pdf](/dm25_resources/week4/slides.pdf)
 + Kahoot: [link](https://create.kahoot.it/details/29670f94-2d08-4235-a7e8-a3d7f869eb05?drawer=)
 + Exercises: [pdf](/dm25_resources/week4/exercises.pdf) 
++ Mega Summary: [pdf](/dm25_resources/week4/mega_summary.pdf)
 
 ## Notes on Last Exercise Sheet
 
