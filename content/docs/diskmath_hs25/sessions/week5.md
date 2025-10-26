@@ -16,7 +16,6 @@ This week we talk about relations and their properties. Then we look at equivale
 + Only Theory: [pdf](/dm25_resources/week5/theory.pdf)
 + Only Proof Tips: [pdf](/dm25_resources/week5/proving_relations.pdf)
 + Only Exercises: [pdf](/dm25_resources/week5/exercises.pdf)
-+ Slides: [pdf](/dm25_resources/week5/slides.pdf)
 + Exercise Sheet Form: [link](https://docs.google.com/forms/d/e/1FAIpQLScMnpUYrNtsRT4-e1_jSNQcuhLvTa4e-RFiIi_wPiRIB_KPTg/viewform?usp=dialog)
 + Email Form: [link](https://docs.google.com/forms/d/e/1FAIpQLSfghM7yC6jrW3cWnAOSHKh21_q-wHL9-8n7a_XU5aRtPMyrqQ/viewform?usp=header)
 

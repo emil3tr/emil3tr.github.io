@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+
+  
+
+
+
+  Week5 - Relations
+  
+  #
+  
+
+This week we practice posets and functions and then learn how to prove countability / uncountability.
+
+  Resources
+  
+  #
+  
+
+
+Exercises &#43; Solutions: pdf
+Kahoot: link
+Slides: pdf
+Exercise Sheet Questions link
+
+There is a great Section about Countability on discmath.ch. You can find more examples there.
+If cannot quite wrap your head around the concept of different infinities, you can look at this video on youtube.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/sessions/week6/">
+  <meta property="og:site_name" content="Emil Straschil">
+  <meta property="og:title" content="Week6 - Posets, Functions, Countability">
+  <meta property="og:description" content="Week5 - Relations#This week we practice posets and functions and then learn how to prove countability / uncountability.
+Resources#Exercises &#43; Solutions: pdf Kahoot: link Slides: pdf Exercise Sheet Questions link There is a great Section about Countability on discmath.ch. You can find more examples there. If cannot quite wrap your head around the concept of different infinities, you can look at this video on youtube.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Week6 - Posets, Functions, Countability | Emil Straschil</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/sessions/week6/">
+<link rel="stylesheet" href="/book.min.b3c4b69454c557ae631185bd4b91bdb7d2ffc7de2348c49069aaef1aa114cae3.css" integrity="sha256-s8S2lFTFV65jEYW9S5G9t9L/x94jSMSQaarvGqEUyuM=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.11092fc20ad2603854ae0d10883153a5cf312c05adff2dbf8b822d5cc9321ec7.js" integrity="sha256-EQkvwgrSYDhUrg0QiDFTpc8xLAWt/y2/i4ItXMkyHsc=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs book-layout-">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Emil Straschil</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/" class="">Diskmath HS25 Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle" checked />
+    <label for="section-4c080ef129e4e5895f271099460bc683" class="flex">
+      <a role="button" class="flex-auto ">Sessions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week1/" class="">Week1 - Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week2/" class="">Week2 - Predicate Logic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week3/" class="">Week3 - Proof Patterns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week4/" class="">Week4 - Sets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week5/" class="">Week5 - Relations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/sessions/week6/" class="active">Week6 - Posets, Functions, Countability</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle"  />
+    <label for="section-d946c0522a96442bfd949f35f0fd286f" class="flex">
+      <a role="button" class="flex-auto ">Reading Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="">Script Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/diskmath_hs25/reading_questions/chapter3/" class="">Script Chapter 3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Week6 - Posets, Functions, Countability</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#proving-countability-of-a-set">Proving Countability of a Set</a></li>
+    <li><a href="#find-the-injection">Find the Injection</a></li>
+    <li><a href="#prove-that-it-is-a-function">Prove that it is a Function</a></li>
+    <li><a href="#prove-the-injectivity">Prove the Injectivity</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#proving-uncountability">Proving Uncountability</a></li>
+    <li><a href="#find-the-injection-1">Find the Injection</a></li>
+    <li><a href="#prove-that-it-is-a-function-1">Prove that it is a Function</a></li>
+    <li><a href="#prove-the-injectivity-1">Prove the Injectivity</a></li>
+    <li><a href="#conclusion-1">Conclusion</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article">
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+
+  <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  &#34;delimiters&#34;: [
+    {&#34;left&#34;: &#34;$$&#34;, &#34;right&#34;: &#34;$$&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;\\(&#34;, &#34;right&#34;: &#34;\\)&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\[&#34;, &#34;right&#34;: &#34;\\]&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;$&#34;, &#34;right&#34;: &#34;$&#34;, &#34;display&#34;: false}
+  ]
+});"></script>
+
+
+<h1 id="week5---relations">
+  Week5 - Relations
+  
+  <a class="anchor" href="#week5---relations">#</a>
+  
+</h1>
+<p>This week we practice posets and functions and then learn how to prove countability / uncountability.</p>
+<h2 id="resources">
+  Resources
+  
+  <a class="anchor" href="#resources">#</a>
+  
+</h2>
+<ul>
+<li>Exercises + Solutions: <a href="/dm25_resources/week6/exercises.pdf">pdf</a></li>
+<li>Kahoot: <a href="https://create.kahoot.it/details/0b6165df-bd22-463d-9947-abbf7eabc1cd?drawer=">link</a></li>
+<li>Slides: <a href="/dm25_resources/week6/slides.pdf">pdf</a></li>
+<li>Exercise Sheet Questions <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA_2dVb5aWD30xELkvIQcuPQkRdHNg91RZTCrwqUdsJvk8hQ/viewform?usp=publish-editor">link</a></li>
+</ul>
+<p>There is a great Section about Countability on <a href="https://discmath.ch/content/ch3/countability">discmath.ch</a>. You can find more examples there.
+If cannot quite wrap your head around the concept of different infinities, you can look at this <a href="https://m.youtube.com/watch?v=OxGsU8oIWjY">video</a> on youtube.</p>
+<h2 id="notes-on-last-exercise-sheet">
+  Notes on Last Exercise Sheet
+  
+  <a class="anchor" href="#notes-on-last-exercise-sheet">#</a>
+  
+</h2>
+<ul>
+<li>Good work overall</li>
+<li>Don&rsquo;t just start with some a and b. Write &ldquo;Take any a,b &hellip;&rdquo; or &ldquo;This holds for any a,b in &hellip;&rdquo; or something similar.</li>
+<li><strong>Jusify your steps!!</strong></li>
+<li>Don&rsquo;t make it more complicated than it needs to be. Make sure you exactly understand what you need to show before you start.</li>
+</ul>
+<h2 id="proving-countability-of-a-set">
+  Proving Countability of a Set
+  
+  <a class="anchor" href="#proving-countability-of-a-set">#</a>
+  
+</h2>
+<p>We know that a set $A$ is countable if $A \preccurlyeq \mathbb{N}$, which we can show by finding an injection from
+$A$ to $\mathbb{N}$. But we can also find an injection from $A$ to <em>any</em> countable set:</p>
+<blockquote class="book-hint default">
+<p>If there is an injection $\varphi : A \rightarrow B$ and $B$ is countable, then $A$ is also countable.</p>
+</blockquote>
+<p><em>Proof:</em> Since $B$ is countable we know $B \preccurlyeq \mathbb{N}$ and since we found an injection from $A$ to $B$ we
+also know $A \preccurlyeq B$. Now the transitivity of $\preccurlyeq$ implies $A \preccurlyeq \mathbb{N}$.</p>
+<p>This means we can use some of the countable sets we already know as $B$. Some useful ones are: $\mathbb{N}$, $\{ 0,1 \}^{*}$ (the set
+of finite bitstrings), $\mathbb{N} \times \mathbb{N}$ or any other countable set that you can create using the rules in the script.
+So proving countability usually goes like this:</p>
+<div class="book-steps ">
+<ol>
+<li>
+<h2 id="find-the-injection">
+  Find the Injection
+  
+  <a class="anchor" href="#find-the-injection">#</a>
+  
+</h2>
+<p>This is the hardest part. Get an intuition about the set and find the injection $\varphi$.</p>
+</li>
+<li>
+<h2 id="prove-that-it-is-a-function">
+  Prove that it is a Function
+  
+  <a class="anchor" href="#prove-that-it-is-a-function">#</a>
+  
+</h2>
+<p>To prove that $\varphi$ is a function we need to show that it is <em>well-defined</em> and <em>totally defined</em>. Even if
+those proprties might seem obvious to you, you still need to prove them!</p>
+</li>
+<li>
+<h2 id="prove-the-injectivity">
+  Prove the Injectivity
+  
+  <a class="anchor" href="#prove-the-injectivity">#</a>
+  
+</h2>
+<p>Finally, prove that $\varphi$ is actually an injection.</p>
+</li>
+<li>
+<h2 id="conclusion">
+  Conclusion
+  
+  <a class="anchor" href="#conclusion">#</a>
+  
+</h2>
+<p>Conclude with the argument above that the set is countable.</p>
+</li>
+</ol>
+</div>
+<h2 id="proving-uncountability">
+  Proving Uncountability
+  
+  <a class="anchor" href="#proving-uncountability">#</a>
+  
+</h2>
+<p>If we want to prove uncountability we first need a lemma:</p>
+<blockquote class="book-hint default">
+<p>If $B$ is uncountable and there is an injection $\varphi : B \rightarrow A$ from $B$ to $A$ then $A$ is
+also uncountable.</p>
+</blockquote>
+<p><em>Proof:</em> Since there is an injection from $B$ to $A$ we know that $B \preccurlyeq A$. Now assume $A$ was countable.
+Then $A \preccurlyeq \mathbb{N}$ and per injectivity of $\preccurlyeq$ we get $B \preccurlyeq \mathbb{N}$. But this means
+that $B$ is countable, which is a contradiction.</p>
+<blockquote class="book-hint success">
+<p>What you just saw is the <strong>magic sentence</strong>. Whenever you prove uncountability you will copy-paste this
+sentence at the start / end of the proof. (Either from your brain or cheatsheet.)</p>
+</blockquote>
+<p>So now we have a method to prove uncountability. Most of the time you will use $\{ 0,1 \}^{\infty}$ as your set $B$.</p>
+<div class="book-steps ">
+<ol>
+<li>
+<h2 id="find-the-injection-1">
+  Find the Injection
+  
+  <a class="anchor" href="#find-the-injection-1">#</a>
+  
+</h2>
+<p>This is the hardest part. Get an intuition about the set and find the injection $\varphi$.</p>
+</li>
+<li>
+<h2 id="prove-that-it-is-a-function-1">
+  Prove that it is a Function
+  
+  <a class="anchor" href="#prove-that-it-is-a-function-1">#</a>
+  
+</h2>
+<p>To prove that $\varphi$ is a function we need to show that it is <em>well-defined</em> and <em>totally defined</em>. Even if
+those proprties might seem obvious to you, you still need to prove them!</p>
+</li>
+<li>
+<h2 id="prove-the-injectivity-1">
+  Prove the Injectivity
+  
+  <a class="anchor" href="#prove-the-injectivity-1">#</a>
+  
+</h2>
+<p>Finally, prove that $\varphi$ is actually an injection.</p>
+</li>
+<li>
+<h2 id="conclusion-1">
+  Conclusion
+  
+  <a class="anchor" href="#conclusion-1">#</a>
+  
+</h2>
+<p>Conclude with the <strong>magic sentence</strong> above that the set is countable.</p>
+</li>
+</ol>
+</div>
+<p>See that the steps are basically the same as above? Yes! Proving uncountability and countability is not actually <em>that</em>
+difficult. After you understoof the set you are working with and found the injection, the rest is mostly just mechanical work.</p>
+<p>Look at <a href="https://discmath.ch/content/ch3/countability">discmath.ch</a> for a more in-depth guide and some useful tips!</p>
+<h2 id="exercise-sheet-recommendations">
+  Exercise Sheet Recommendations
+  
+  <a class="anchor" href="#exercise-sheet-recommendations">#</a>
+  
+</h2>
+<p>All the exercises this week are good (and important). Don&rsquo;t skip <strong>6.6</strong>, a lot of (old) exam exercises are similar to it.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/diskmath_hs25/sessions/week5/" class="flex align-center">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Week5 - Relations" />
+        <span>Week5 - Relations</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="flex align-center">
+        <span>Script Chapter 2</span>
+        <img src="/svg/forward.svg" class="book-icon" alt="Next" title="Script Chapter 2" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#proving-countability-of-a-set">Proving Countability of a Set</a></li>
+    <li><a href="#find-the-injection">Find the Injection</a></li>
+    <li><a href="#prove-that-it-is-a-function">Prove that it is a Function</a></li>
+    <li><a href="#prove-the-injectivity">Prove the Injectivity</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#proving-uncountability">Proving Uncountability</a></li>
+    <li><a href="#find-the-injection-1">Find the Injection</a></li>
+    <li><a href="#prove-that-it-is-a-function-1">Prove that it is a Function</a></li>
+    <li><a href="#prove-the-injectivity-1">Prove the Injectivity</a></li>
+    <li><a href="#conclusion-1">Conclusion</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
+  </ul>
+</nav>
+
+
+
+  </div>
+</aside>
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

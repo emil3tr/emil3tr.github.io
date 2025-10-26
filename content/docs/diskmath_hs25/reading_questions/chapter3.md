@@ -21,9 +21,9 @@ the same element twice?
 to some we saw in a previous chapter? Can you prove those using the rules you already know from
 propositional logic?
 8. What is the symbol for the empty set? Name an interesting property of the empty set.
-9. Consider the following sets: $ \{ \varnothing \} , \varnothing , \{ \varnothing , \{ \varnothing \} \}, \{\{ \varnothing \}\}$.
+9. Consider the following sets: $ \\{ \varnothing \\} , \varnothing , \\{ \varnothing , \\{ \varnothing \\} \\}, \\{\\{ \varnothing \\}\\}$.
 How many elements do they have? Which ones are subsets of some other? Can you construct one set using a set operation
 on two others?
 10. Define the *powerset* of a set. How many elements does the powerset of A with |A| = 4 have? What is the powerset of $\varnothing$?
-What is the powerset of $\{ \varnothing \}$?
+What is the powerset of $\\{ \varnothing \\}$?
 

@@ -4,9 +4,9 @@
   <url>
     <loc>http://localhost:1313/docs/diskmath_hs25/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/diskmath_hs25/reading_questions/</loc>
-  </url><url>
     <loc>http://localhost:1313/docs/diskmath_hs25/sessions/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/diskmath_hs25/reading_questions/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -26,8 +26,10 @@
   </url><url>
     <loc>http://localhost:1313/docs/diskmath_hs25/sessions/week3/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/diskmath_hs25/sessions/week4/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/diskmath_hs25/sessions/week5/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/diskmath_hs25/sessions/week4/</loc>
+    <loc>http://localhost:1313/docs/diskmath_hs25/sessions/week6/</loc>
   </url>
 </urlset>
