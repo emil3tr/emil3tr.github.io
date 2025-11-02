@@ -10,52 +10,25 @@
 
 
 
-  3.1 Introduction
+  Week7 - Number Theory
   
   #
   
 
-
-Give an informal description of a set
-Explain Russell&rsquo;s Paradox
-
-
-  3.2 Sets and Set Operations
-  
-  #
-  
-
-
-Explain what a set is. How do we define a set? Can a set contain
-the same element twice?
-When are two sets equal?
-Give the definition of $A \subseteq B$ both formally and in your own words.
-How can we show that two sets equal using $\subseteq$?
-Define $A \cup B$ and $A \cap B$ in you own words. Then write down the formal definitons.
-Define $A \setminus B$ both formally and in your own words.
-Remember the laws for set operations from Theorem 3.4. Which of those laws are similar
-to some we saw in a previous chapter? Can you prove those using the rules you already know from
-propositional logic?
-What is the symbol for the empty set? Name an interesting property of the empty set.
-Consider the following sets: $ \{ \varnothing \} , \varnothing , \{ \varnothing , \{ \varnothing \} \}, \{\{ \varnothing \}\}$.
-How many elements do they have? Which ones are subsets of some other? Can you construct one set using a set operation
-on two others?
-Define the powerset of a set. How many elements does the powerset of A with |A| = 4 have? What is the powerset of $\varnothing$?
-What is the powerset of $\{ \varnothing \}$?
-">
+This week we cover the entire number theory chapter. We talk about gcd, lcm, primes, divisors, modulo calculations and more. Then we practice some (old exam) excercises. Lastly we learn the Euclid Algorithm for finding the gcd of two numbers.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter3/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/diskmath_hs25/sessions/week7/">
   <meta property="og:site_name" content="Emil Straschil">
-  <meta property="og:title" content="Script Chapter 3">
-  <meta property="og:description" content="3.1 Introduction#Give an informal description of a set Explain Russell’s Paradox 3.2 Sets and Set Operations#Explain what a set is. How do we define a set? Can a set contain the same element twice? When are two sets equal? Give the definition of $A \subseteq B$ both formally and in your own words. How can we show that two sets equal using $\subseteq$? Define $A \cup B$ and $A \cap B$ in you own words. Then write down the formal definitons. Define $A \setminus B$ both formally and in your own words. Remember the laws for set operations from Theorem 3.4. Which of those laws are similar to some we saw in a previous chapter? Can you prove those using the rules you already know from propositional logic? What is the symbol for the empty set? Name an interesting property of the empty set. Consider the following sets: $ \{ \varnothing \} , \varnothing , \{ \varnothing , \{ \varnothing \} \}, \{\{ \varnothing \}\}$. How many elements do they have? Which ones are subsets of some other? Can you construct one set using a set operation on two others? Define the powerset of a set. How many elements does the powerset of A with |A| = 4 have? What is the powerset of $\varnothing$? What is the powerset of $\{ \varnothing \}$?">
+  <meta property="og:title" content="Week7 - Number Theory">
+  <meta property="og:description" content="Week7 - Number Theory#This week we cover the entire number theory chapter. We talk about gcd, lcm, primes, divisors, modulo calculations and more. Then we practice some (old exam) excercises. Lastly we learn the Euclid Algorithm for finding the gcd of two numbers.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>Script Chapter 3 | Emil Straschil</title>
+<title>Week7 - Number Theory | Emil Straschil</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter3/">
+<link rel="canonical" href="http://localhost:1313/docs/diskmath_hs25/sessions/week7/">
 <link rel="stylesheet" href="/book.min.b3c4b69454c557ae631185bd4b91bdb7d2ffc7de2348c49069aaef1aa114cae3.css" integrity="sha256-s8S2lFTFV65jEYW9S5G9t9L/x94jSMSQaarvGqEUyuM=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/en.search.min.e2817c31b1360416c73ada9f4b2aeaca057d487cb63c96e73077f03bba39a96d.js" integrity="sha256-4oF8MbE2BBbHOtqfSyrqygV9SHy2PJbnMHfwO7o5qW0=" crossorigin="anonymous"></script>
@@ -124,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle"  />
+    <input type="checkbox" id="section-4c080ef129e4e5895f271099460bc683" class="toggle" checked />
     <label for="section-4c080ef129e4e5895f271099460bc683" class="flex">
       <a role="button" class="flex-auto ">Sessions</a>
     </label>
@@ -218,7 +191,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/diskmath_hs25/sessions/week7/" class="">Week7 - Number Theory</a>
+    <a href="/docs/diskmath_hs25/sessions/week7/" class="active">Week7 - Number Theory</a>
   
 
         </li>
@@ -236,7 +209,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle" checked />
+    <input type="checkbox" id="section-d946c0522a96442bfd949f35f0fd286f" class="toggle"  />
     <label for="section-d946c0522a96442bfd949f35f0fd286f" class="flex">
       <a role="button" class="flex-auto ">Reading Questions</a>
     </label>
@@ -265,7 +238,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/diskmath_hs25/reading_questions/chapter3/" class="active">Script Chapter 3</a>
+    <a href="/docs/diskmath_hs25/reading_questions/chapter3/" class="">Script Chapter 3</a>
   
 
         </li>
@@ -317,7 +290,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Script Chapter 3</h3>
+  <h3>Week7 - Number Theory</h3>
 
   <label for="toc-control">
     
@@ -333,8 +306,9 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#31-introduction">3.1 Introduction</a></li>
-    <li><a href="#32-sets-and-set-operations">3.2 Sets and Set Operations</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
   </ul>
 </nav>
 
@@ -361,40 +335,47 @@ https://github.com/alex-shpak/hugo-book
 });"></script>
 
 
-<h2 id="31-introduction">
-  3.1 Introduction
+<h1 id="week7---number-theory">
+  Week7 - Number Theory
   
-  <a class="anchor" href="#31-introduction">#</a>
+  <a class="anchor" href="#week7---number-theory">#</a>
   
-</h2>
-<ol>
-<li>Give an informal description of a set</li>
-<li>Explain Russell&rsquo;s Paradox</li>
-</ol>
-<h2 id="32-sets-and-set-operations">
-  3.2 Sets and Set Operations
+</h1>
+<p>This week we cover the entire number theory chapter. We talk about gcd, lcm, primes, divisors, modulo calculations and more. Then we practice some (old exam) excercises. Lastly we learn the Euclid Algorithm for finding the gcd of two numbers.</p>
+<h2 id="resources">
+  Resources
   
-  <a class="anchor" href="#32-sets-and-set-operations">#</a>
+  <a class="anchor" href="#resources">#</a>
   
 </h2>
-<ol>
-<li>Explain what a <em>set</em> is. How do we define a set? Can a set contain
-the same element twice?</li>
-<li>When are two sets equal?</li>
-<li>Give the definition of $A \subseteq B$ both formally and in your own words.</li>
-<li>How can we show that two sets equal using $\subseteq$?</li>
-<li>Define $A \cup B$ and $A \cap B$ in you own words. Then write down the formal definitons.</li>
-<li>Define $A \setminus B$ both formally and in your own words.</li>
-<li>Remember the laws for set operations from <strong>Theorem 3.4</strong>. Which of those laws are similar
-to some we saw in a previous chapter? Can you prove those using the rules you already know from
-propositional logic?</li>
-<li>What is the symbol for the empty set? Name an interesting property of the empty set.</li>
-<li>Consider the following sets: $ \{ \varnothing \} , \varnothing , \{ \varnothing , \{ \varnothing \} \}, \{\{ \varnothing \}\}$.
-How many elements do they have? Which ones are subsets of some other? Can you construct one set using a set operation
-on two others?</li>
-<li>Define the <em>powerset</em> of a set. How many elements does the powerset of A with |A| = 4 have? What is the powerset of $\varnothing$?
-What is the powerset of $\{ \varnothing \}$?</li>
-</ol>
+<ul>
+<li>Kahoot: <a href="https://create.kahoot.it/details/29d5ea9d-1b73-421b-ba87-6d816383b217?drawer=">link</a></li>
+<li>Exercises + Solutions: <a href="/dm25_resources/week7/exercises.pdf">pdf</a></li>
+<li>Intuition Drawings: <a href="/dm25_resources/week7/intuition.pdf">pdf</a></li>
+<li>(Extended) Euclid Algorithm: <a href="/dm25_resources/week7/euclid.pdf">pdf</a></li>
+<li>CRT Brute Force Method: <a href="/dm25_resources/week7/crtbruteforce.pdf">pdf</a></li>
+<li>Slides: <a href="/dm25_resources/week7/slides.pdf">pdf</a></li>
+<li>Exercise Sheet Questions: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiwZP5DduGHC5_QjwSFjctcu1vA4lmF7Vs2eSgtKolG5C2Gg/viewform?usp=publish-editor">link</a></li>
+</ul>
+<p>You can find even more exercises in the books linked <a href="https://discmath.ch/content/ch4">here</a>.</p>
+<h2 id="notes-on-last-exercise-sheet">
+  Notes on Last Exercise Sheet
+  
+  <a class="anchor" href="#notes-on-last-exercise-sheet">#</a>
+  
+</h2>
+<ul>
+<li>I was surprised by how well they got solved on average!</li>
+<li><strong>JUSTIFY EVERY STEP.</strong> (I am sloppy in my solutions that I give you, but you need to justify <strong>everything</strong>!)</li>
+<li>If you haven&rsquo;t already, take a look at 6.6 (a lot of old exam questions are similar)</li>
+</ul>
+<h2 id="exercise-sheet-recommendations">
+  Exercise Sheet Recommendations
+  
+  <a class="anchor" href="#exercise-sheet-recommendations">#</a>
+  
+</h2>
+<p>Pretty much all of them look useful to me. If you don&rsquo;t have time, then leave out the three-stars.</p>
 </article>
  
       
@@ -419,13 +400,18 @@ What is the powerset of $\{ \varnothing \}$?</li>
   <div class="flex flex-wrap justify-between">
     <span>
     
-      <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="flex align-center">
-        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Script Chapter 2" />
-        <span>Script Chapter 2</span>
+      <a href="/docs/diskmath_hs25/sessions/week6/" class="flex align-center">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Week6 - Posets, Functions, Countability" />
+        <span>Week6 - Posets, Functions, Countability</span>
       </a>
     
     </span>
     <span>
+    
+      <a href="/docs/diskmath_hs25/reading_questions/chapter2/" class="flex align-center">
+        <span>Script Chapter 2</span>
+        <img src="/svg/forward.svg" class="book-icon" alt="Next" title="Script Chapter 2" />
+      </a>
     
     </span>
   </div>
@@ -459,8 +445,9 @@ What is the powerset of $\{ \varnothing \}$?</li>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#31-introduction">3.1 Introduction</a></li>
-    <li><a href="#32-sets-and-set-operations">3.2 Sets and Set Operations</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#notes-on-last-exercise-sheet">Notes on Last Exercise Sheet</a></li>
+    <li><a href="#exercise-sheet-recommendations">Exercise Sheet Recommendations</a></li>
   </ul>
 </nav>
 

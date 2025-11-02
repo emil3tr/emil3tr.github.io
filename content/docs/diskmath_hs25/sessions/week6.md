@@ -3,7 +3,7 @@ title: "Week6 - Posets, Functions, Countability"
 ---
 {{< katex />}}
 
-# Week5 - Relations
+# Week6 - Posets, Functions, Countability
 
 This week we practice posets and functions and then learn how to prove countability / uncountability.
 
