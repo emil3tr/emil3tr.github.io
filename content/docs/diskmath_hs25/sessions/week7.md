@@ -7,6 +7,8 @@ title: "Week7 - Number Theory"
 
 This week we cover the entire number theory chapter. We talk about gcd, lcm, primes, divisors, modulo calculations and more. Then we practice some (old exam) excercises. Lastly we learn the Euclid Algorithm for finding the gcd of two numbers.
 
+**IMPORTANT:** The class next week will NOT take place on monday! I will instead hold it on **Tuesday, Novemember 11 at 16:15 in LFW B3**. If you cannot attend: If you are not inscribed in my group, visit the tutorial you are inscribed in. Everyone in my group: If your last name starts with A-M then go to CHN D42, if it starts with N-Z go to LFW C11 (both at the usual time 16:15 on Monday).
+
 ## Resources
 
 + Kahoot: [link](https://create.kahoot.it/details/29d5ea9d-1b73-421b-ba87-6d816383b217?drawer=)
