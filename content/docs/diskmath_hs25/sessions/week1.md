@@ -8,8 +8,7 @@ This week, I give an introduction to the course and some study tips. Then we dis
 
 ## Resources
 
-+ Slides (to be published)
-+ Kahoot (to be published)
+See Week2.
 
 ## Useful Links
 
