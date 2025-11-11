@@ -9,7 +9,9 @@ This week we start with Algebra. We discuss monoids and groups. Then we talk abo
 ## Resources
 
 + Kahoot: [link](https://create.kahoot.it/details/8f4e648b-bcf7-414e-a67b-accb27c1ea45?drawer=)
-+ Exercises + Solutions: coming soon
++ Algebra Guide: [pdf](/dm25_resources/week8/groups.pdf)
++ Exercises + Solutions: [pdf](/dm25_resources/week8/exercises.pdf)
++ Exercise 2 Solution: [pdf](/dm25_resources/week8/solution.pdf)
 
 Some other sources:
 
