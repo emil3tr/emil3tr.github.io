@@ -1,5 +1,6 @@
 ---
 title: "Week5 - Relations"
+weight: 5
 ---
 {{< katex />}}
 

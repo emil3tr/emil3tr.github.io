@@ -1,5 +1,6 @@
 ---
 title: "Week1 - Introduction"
+weight: 1
 ---
 
 # Week1 - Introduction

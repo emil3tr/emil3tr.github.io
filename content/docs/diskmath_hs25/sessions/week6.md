@@ -1,5 +1,6 @@
 ---
 title: "Week6 - Posets, Functions, Countability"
+weight: 6
 ---
 {{< katex />}}
 

@@ -1,5 +1,6 @@
 ---
 title: "Week9 - Algebra, RSA"
+weight: 9
 ---
 {{< katex />}}
 

@@ -1,5 +1,6 @@
 ---
 title: "Week4 - Sets"
+weight: 4
 ---
 {{< katex />}}
 

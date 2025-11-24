@@ -1,5 +1,6 @@
 ---
 title: "Week2 - Predicate Logic"
+weight: 2
 ---
 {{< katex />}}
 

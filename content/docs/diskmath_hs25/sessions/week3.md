@@ -1,5 +1,6 @@
 ---
 title: "Week3 - Proof Patterns"
+weight: 3
 ---
 {{< katex />}}
 

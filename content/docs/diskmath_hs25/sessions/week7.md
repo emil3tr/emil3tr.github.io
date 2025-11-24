@@ -1,5 +1,6 @@
 ---
 title: "Week7 - Number Theory"
+weight: 7
 ---
 {{< katex />}}
 

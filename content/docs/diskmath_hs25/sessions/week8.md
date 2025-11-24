@@ -1,5 +1,6 @@
 ---
 title: "Week8 - Algebra"
+weight: 8
 ---
 {{< katex />}}
 
