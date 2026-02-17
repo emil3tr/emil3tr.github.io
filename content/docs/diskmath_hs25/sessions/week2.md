@@ -2,9 +2,6 @@
 title: "Week2 - Predicate Logic"
 weight: 2
 ---
-{{< katex />}}
-
-# Week 2 - Predicate Logic
 
 This week we recap propositional logic and discuss the formalism needed in the exercises. Then I introduce predicate logic and we practice working with quantifiers and predicates.
 
@@ -29,37 +26,32 @@ Last week we worked a lot with propositional logic and symbols like $\lnot , \lo
 
 **Predicates** are functions $U^k \rightarrow \{0,1\}$. They take k values from the universe $U$ and then give a truth value depending on them. Whenever we want to work with predicates we need to specify the **universe** we are working in.
 
-{{% hint info %}}
-An easy way to define a predicate is specifying when exactly it yields true. For example
-$$
-P(x)=1 \Longleftrightarrow x \thinspace \text{is prime}
-$$
-defines a precidate P that gives true exactly when its input is prime.
-{{% /hint %}}
+> An easy way to define a predicate is specifying when exactly it yields true. For example
+> $$
+    P(x)=1 \Longleftrightarrow x \thinspace \text{is prime}
+  $$
+> defines a precidate P that gives true exactly when its input is prime.
 
-{{% hint warning %}}
-The universe is very important! Interpreting the formula $\forall x \exists y (y < x)$ with $U=\mathbb{N}$ or $U=\mathbb{Z}$ makes a big difference.
-{{% /hint %}}
+> [!WARNING]
+> The universe is very important! Interpreting the formula $\forall x \exists y (y < x)$ with $U=\mathbb{N}$ or $U=\mathbb{Z}$ makes a big difference.
 
 **Quantifiers** allow us to reason about the elements in the universe:
 
 + $\forall x P(x)$ means "$P(x)$ is true *for all* $x$ in $U$"
 + $\exists x P(x)$ means "there exists some (at least one) $x$ in $U$ for which $P(x)$ is true.
 
-{{% hint warning %}}
-$\exists x$ does **not** mean "exactly one"
-{{% /hint %}}
+> [!WARNING]
+> $\exists x$ does **not** mean "exactly one"
 
-### Negating Quantors
+### Negating Quantifiers
 
-When we negate a quantor, we pull the $\lnot$ inside and change the quantor. So
+When we negate a quantifier, we pull the $\lnot$ inside and change the quantifier. So
 $$ \lnot \forall x P(x) \equiv \exists x \lnot P(x) $$
 and
 $$ \lnot \exists x P(x) \equiv \forall x \lnot P(x) $$
 
-{{% hint info %}}
-Make sure to read the chapters in the script about predicate logic. If you need some more practice, look at [the page on discmath.ch](https://discmath.ch/content/ch2/predicate-logic)
-{{% /hint %}}
+
+> Make sure to read the chapters in the script about predicate logic. If you need some more practice, look at [the page on discmath.ch](https://discmath.ch/content/ch2/predicate-logic)
 
 ## Exercise Sheet Recommendations
 

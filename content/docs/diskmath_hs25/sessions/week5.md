@@ -2,9 +2,6 @@
 title: "Week5 - Relations"
 weight: 5
 ---
-{{< katex />}}
-
-# Week5 - Relations
 
 This week we talk about relations and their properties. Then we look at equivalence relations and partial order relations.
 

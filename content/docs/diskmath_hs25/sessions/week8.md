@@ -2,9 +2,6 @@
 title: "Week8 - Algebra"
 weight: 8
 ---
-{{< katex />}}
-
-# Week8 - Algebra
 
 This week we start with Algebra. We discuss monoids and groups. Then we talk about homomorphisms and do some proof exercises.
 ## Resources

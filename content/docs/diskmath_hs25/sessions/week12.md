@@ -2,9 +2,6 @@
 title: "Week12 - More Logic"
 weight: 12
 ---
-{{< katex />}}
-
-# Week12 - More Logic
 
 This week we continue with chapter 6. We mostly focus on predicate logic and get comfortable evaluating formulas and proving statements about them.
 

@@ -2,9 +2,6 @@
 title: "Week10 - Fields, Polynomials"
 weight: 10
 ---
-{{< katex />}}
-
-# Week10 - Fields, Polynomials
 
 This week we introduce fields. Then we talk about polynomials over rings and practice some essential results and methods.
 
