@@ -2,9 +2,6 @@
 title: "Week9 - Algebra, RSA"
 weight: 9
 ---
-{{< katex />}}
-
-# Week9 - Algebra, RSA
 
 This week we recap the basics of algebra. Then we take a deep dive into RSA encryption. Lastly, we introduce rings and do some practice exercises.
 

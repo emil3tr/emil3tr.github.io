@@ -2,9 +2,6 @@
 title: "Week11 - Logic"
 weight: 11
 ---
-{{< katex />}}
-
-# Week11 - Logic
 
 This week we start with chapter 6 - the logic chapter. We talk about proof systems and then cover logical calculi. Lastly we practice some proofs and deriving the conjunctive and disjunctive normal forms. 
 

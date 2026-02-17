@@ -2,9 +2,6 @@
 title: "Week13 - Some More Logic"
 weight: 13
 ---
-{{< katex />}}
-
-# Week13 - Some More Logic
 
 This is the last week. We will practice resolution calculus and learn about the prenex form. Then I will give some final exam tips and conclude this semester.
 

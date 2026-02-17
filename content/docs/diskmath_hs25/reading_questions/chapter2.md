@@ -1,7 +1,6 @@
 ---
 title: "Script Chapter 2"
 ---
-{{< katex />}}
 
 ## 2.1 Mathematical Statements
 

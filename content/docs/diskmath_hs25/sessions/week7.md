@@ -2,9 +2,6 @@
 title: "Week7 - Number Theory"
 weight: 7
 ---
-{{< katex />}}
-
-# Week7 - Number Theory
 
 This week we cover the entire number theory chapter. We talk about gcd, lcm, primes, divisors, modulo calculations and more. Then we practice some (old exam) excercises. Lastly we learn the Euclid Algorithm for finding the gcd of two numbers.
 

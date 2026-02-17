@@ -2,9 +2,6 @@
 title: "Week4 - Sets"
 weight: 4
 ---
-{{< katex />}}
-
-# Week4 - Sets
 
 This week we introduce sets and the basic set operations. Then we practive proving properties / equalities of sets and talk about relations a bit.
 
@@ -33,25 +30,20 @@ If you want to read more on how we define sets, you can look at [discmath.ch](ht
 
 So what is a *set*? For us, the hintrmal definition "a collection of well defined objects" should be enough. We write $a \in A$ if $a$ is an element of $A$.
 
-{{% hint warning %}}
-A set can only contain each element **once**. This means an object is either inside the set or not.
-{{% /hint %}}
+> [!CAUTION]
+> A set can only contain each element **once**. This means an object is either inside the set or not.
 
-{{% hint %}}
-The script contains a very good explanation for the *set operations* like $\subseteq$, $\cup$, ... Make sure that you not only understand them intuitively, but also the formal definitions.
-{{% /hint %}}
+> The script contains a very good explanation for the *set operations* like $\subseteq$, $\cup$, ... Make sure that you not only understand them intuitively, but also the formal definitions.
 
 ### The Powerset
 
 One of the more difficult set operations is the powerset of a set. 
 
-{{% hint %}}
-We define the powerset of a set $A$ as:
-$$
-    S \in P(A) \Longleftrightarrow S \subseteq A
-$$
-In words: "the powerset of A contains all subsets of A". 
-{{% /hint %}}
+> We define the powerset of a set $A$ as:
+> $$
+   S \in P(A) \Longleftrightarrow S \subseteq A
+  $$w
+> In words: "the powerset of A contains all subsets of A". 
 
 Note that the powerset is a **set** which contains **sets**. It has the following interesting properties:
 
@@ -69,29 +61,29 @@ To show that $A$ is a subset of $B$, we need to show that every element in $A$ i
 of doing this is by taking an arbitrary but fixed element from $A$ and then showing that it is also in $B$.
 This would look something like:
 
-{{% hint %}}
-Let $x$ in A be arbitrary.
-$$
-\begin{align*}
-    & x \in A \\\\
-    \implies & \dots \\\\
-    \implies & \dots \\\\
-    \implies & x \in B
-\end{align*}
-$$
-{{% /hint %}}
 
-{{% hint warning %}}
+> Let $x$ in A be arbitrary.
+> $$
+  \begin{align*}
+     & x \in A \\
+     \implies & \dots \\
+     \implies & \dots \\
+     \implies & x \in B
+  \end{align*}
+  $$
+
+
+> [!WARNING]
 When we say "let x be arbitrary but fixed", then we mean that we take any element of the set. This means that
 all of your steps afterwards have to work for any element of the set!
-{{% /hint %}}
+
 
 ### Showing A = B
 
 There are two ways of showing $A = B$. The first one uses a very useful statement from the script:
 
 $$
-A = B \Longleftrightarrow A \subseteq B \land B \subseteq A
+    A = B \Longleftrightarrow A \subseteq B \land B \subseteq A
 $$
 
 This means if we need to show that $A = B$ we can simply show both $A \subseteq B$ and $B \subseteq A$ as above.
@@ -99,24 +91,21 @@ This means if we need to show that $A = B$ we can simply show both $A \subseteq 
 The second way is by showing directly that any element in $A$ is also in $B$ and vice versa. A lot of times this also
 works but might be a little bit more difficult. We let $x$ be arbitrary and show:
 
-{{% hint %}}
-$$
-\begin{align*}
-     & x \in A \\\\
-     \Longleftrightarrow & \dots \\\\
-     \Longleftrightarrow & \dots \\\\
-     \Longleftrightarrow & x \in B
-\end{align*}
-$$
-{{% /hint %}}
+
+> $$
+  \begin{align*}
+      & x \in A \\
+      \Longleftrightarrow & \dots \\
+      \Longleftrightarrow & \dots \\
+      \Longleftrightarrow & x \in B
+  \end{align*}
+  $$
+
 
 Note that for this type of proof **all** your implications need to be double-sided! So you need to make sure that
 all rows imply the row above and below it!
 
-{{% hint %}}
-You can find an example for this in the exercises.
-{{% /hint %}}
-
+> You can find an example for this in the exercises.
 
 ### Using Logic
 
@@ -128,19 +117,18 @@ In a lot of cases we can use propositional logic to prove statements regarding s
 
 A simple example:
 
-{{% hint %}}
-Say we want to work with the set $B \cup (C \setminus A)$. Now:
 
-$$
-\begin{align*}
-& x \in B \cup (C \setminus A) \\\\
-\implies & x \in B \lor x \in (C \setminus A) \\\\
-\implies & x \in B \lor (x \in C \land \lnot(x \in A))
-\end{align*}
-$$
-
-Now we can use Lemma 2.1 to refactor the statement and then transform it into a set again with the definitions.
-{{% /hint %}}
+> Say we want to work with the set $B \cup (C \setminus A)$. Now:
+>  
+> $$
+  \begin{align*}
+  & x \in B \cup (C \setminus A) \\
+  \implies & x \in B \lor x \in (C \setminus A) \\
+  \implies & x \in B \lor (x \in C \land \lnot(x \in A))
+  \end{align*}
+  $$
+>  
+> Now we can use Lemma 2.1 to refactor the statement and then transform it into a set again with the definitions.
 
 ## Relations
 

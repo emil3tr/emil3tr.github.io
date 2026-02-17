@@ -2,9 +2,6 @@
 title: "Week3 - Proof Patterns"
 weight: 3
 ---
-{{< katex />}}
-
-# Week 3 - Proof Patterns
 
 This week we focus a lot on proof patterns since it is a **very** important topic. We also quickly review predicate logic.
 
@@ -29,10 +26,8 @@ We can do both of those things using propositional logic! I will explain the ide
 
 When you are asked to evaluate a proof pattern, it will always be of the following form: It states what statement $S$ it wants to prove and then gives some other statements. Then it claims if we prove those other statements, we have actually proven the statement $S$. For example, a proposed proof pattern might look like this:
 
+> We want to prove the statement $S$, we first prove another statement $T$. Then we show that $T \implies S$
 
-{{% hint %}}
-We want to prove the statement $S$, we first prove another statement $T$. Then we show that $T \implies S$
-{{% /hint %}}
 
 This proof pattern consists of two parts (which should prove $S$):
 
@@ -43,42 +38,38 @@ You might also see proof patterns with more steps and parts. Don't get confused!
 
 Great, but how do we work with the proof pattern now? Here is where the logic part comes in. We can actually rewrite the pattern using propositional logic. To do this, we take each of the statements, convert them to propositional logic and then combine them with $\land$. To avoid confusion, we use the letters $A, B, C, \dots$ in our formulas and let their truth values correspond to the truth of the statements. For our example proof pattern this would look like this:
 
-{{% hint %}}
-We choose the symbol $A$ and $B$, which correspond to the statements $S$ and $T$ and their truth values respectively. Now we rewrite the statements in propositional logic:
-  
- 1. "We prove $T$" becomes $B$
- 2. "We prove $T \implies S$" becomes $B \rightarrow A$  
- 
-Combining those we get: $F = B \land (B \rightarrow A)$
-{{% /hint %}}
+
+> We choose the symbol $A$ and $B$, which correspond to the statements $S$ and $T$ and their truth values respectively. Now we rewrite the statements in propositional logic:
+>    
+> 1. "We prove $T$" becomes $B$
+> 2. "We prove $T \implies S$" becomes $B \rightarrow A$  
+>   
+> Combining those we get: $F = B \land (B \rightarrow A)$
 
 Okay, we tranformed our statements to a formula $F$. But how do we reason about the correctness of the proof pattern? There is actually a very simple rule:
 
-{{% hint %}}
-The proof pattern is correct exactly if:
 
-$$
+> The proof pattern is correct exactly if:
+>  
+> $$
     F \vDash A
-$$
-
-Where $F$ is the formula we get from the proof pattern and $A$ is the logical variable corresponding to the statement we want to prove. This means we can disprove a proof pattern by showing:
-
-$$
-F \nvDash A
-$$
-
-{{% /hint %}}
+  $$
+>
+> Where $F$ is the formula we get from the proof pattern and $A$ is the logical variable corresponding to the statement we want to prove. This means we can disprove a proof pattern by showing:
+>  
+> $$
+    F \nvDash A
+  $$
 
 Why does this work? We want to show that our statement $S$ is true if we proved all the other statements. Our formula $F$ evaluating to true represents the fact that all the statements are true (since we "linked" each propositional variable to a statement and combined them with $\land$). If $F \vDash A$ then this means that if all our statements are actually true ($F$ is true), then $S$ must also be true ($A$ is true).
 If the logic consequence does not hold, then there must exist some truth assignment where $F$ gives true but $A$ is set to false. This means that $S$ can be false even if all our statements are true, which means the pattern is not valid.
 
-{{% hint %}}
-If the statement you want to show is not simply one statement $S$, but for example $S \implies T$, then you need to transform that to propositional logic too and show the consequence. This should look like:
 
-$$
+> If the statement you want to show is not simply one statement $S$, but for example $S \implies T$, then you need to transform that to propositional logic too and show the consequence. This should look like:
+>  
+> $$
     F \vDash (A \rightarrow B)
-$$
-{{% /hint %}}
+  $$
 
 So let's finish our small example. We show that $F \vDash A$:
 
@@ -98,23 +89,22 @@ $$
 Let's go over the method step by step again before we do some examples:
 
 {{% steps %}}
-1. ## Extract the Statements
-   See what statement $S$ should be proved by the pattern. Then find all the statements we use to prove that statement. (It does not need to be named $S$, we just assume that here for simplicity.)
+### Extract the Statements
+See what statement $S$ should be proved by the pattern. Then find all the statements we use to prove that statement. (It does not need to be named $S$, we just assume that here for simplicity.)
 
-2. ## Transform the Statements to Prop. Logic
-   Define propositional variables $A,B, \dots$ for the statements. Transform each statement individually and then combine them with $\land$ to get a formula $F$.
+### Transform the Statements to Prop. Logic
+Define propositional variables $A,B, \dots$ for the statements. Transform each statement individually and then combine them with $\land$ to get a formula $F$.
 
-3. ## (Dis)prove the Cogical Consequence
-   You can prove $F \vDash A$ either by equivalence transformations or truth tables. You can disprove it by finding a truth assignment where $F$ gives true but $A$ is set to false.   
+### (Dis)prove the Cogical Consequence
+You can prove $F \vDash A$ either by equivalence transformations or truth tables. You can disprove it by finding a truth assignment where $F$ gives true but $A$ is set to false.   
 {{% /steps %}}
 
 ### Example 1: Proving Correctness
 
 This is an exercise from 2020. We get the following proof pattern and want to show that it is correct:
 
-{{% hint %}}
-To prove $S$: Find statements $U$ and $T$. Prove $T$, assuming $S$ is false. Prove $U$, assuming $S$ is false. Show that not both $T$ and $U$ are true.
-{{% /hint %}}
+
+> To prove $S$: Find statements $U$ and $T$. Prove $T$, assuming $S$ is false. Prove $U$, assuming $S$ is false. Show that not both $T$ and $U$ are true.
 
 **Step 1:** We have three statements here:
 
@@ -148,9 +138,8 @@ You can use a truth table to show that this holds. This shows that the proof pat
 
 We want to show that the following proof pattern is incorrect:
 
-{{% hint %}}
-To prove $S \implies T$ we find a statement $R$ and prove that R is true. Then we show that if $R$ is true, $S$ must be true. Finally, we show that at least one of $R$ and $T$ must be true.
-{{% /hint %}}
+
+> To prove $S \implies T$ we find a statement $R$ and prove that R is true. Then we show that if $R$ is true, $S$ must be true. Finally, we show that at least one of $R$ and $T$ must be true.
 
 **Step 1:** We want to show $S \implies T$ using three statements:
 

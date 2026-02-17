@@ -3,8 +3,6 @@ title: "Week1 - Introduction"
 weight: 1
 ---
 
-# Week1 - Introduction
-
 This week, I give an introduction to the course and some study tips. Then we discuss the words *statement*, *formula* and *proof* and learn about the basics of propositional logic.
 
 ## Resources
