@@ -47,3 +47,6 @@ inline = [["\\(", "\\)"], ["$", "$"]]
   name = "About"
   weight = 1
   pageRef = "/about"
+
+[params.footer]
+  displayPoweredBy = true
