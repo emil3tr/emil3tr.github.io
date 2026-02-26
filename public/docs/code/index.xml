@@ -14,5 +14,19 @@
       
     
     
+    <item>
+      <title>Competitive Programming</title>
+      <link>http://localhost:1313/docs/code/competitive_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/code/competitive_programming/</guid>
+      <description>
+        
+        
+        &lt;p&gt;I sometimes take part in competitive programming contests. You can find a repo with my solutions &lt;a href=&#34;https://github.com/emil3tr/competetive_programming&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
