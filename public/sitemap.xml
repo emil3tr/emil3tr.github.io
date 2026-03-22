@@ -88,16 +88,28 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/adaptive_quadrature/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/fourier/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/huber_loss/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter2/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/diskmath_hs25/reading_questions/chapter3/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/signal_filtering/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/code/snippets/tcp_congestion_control/</loc>
   </url>
 </urlset>
