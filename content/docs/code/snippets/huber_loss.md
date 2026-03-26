@@ -18,10 +18,11 @@ def grad_squared_loss(x, w, y):
     return np.dot(-x, y - w*x) / len(x)
 
 def grad_huber_loss(x, w, y):
-    mask = np.abs(y - x*w) <= delta
+    diff = y - x*w
+    mask = np.abs(diff) <= delta
     sum = 0.0
-    sum += np.dot(-x[mask], y[mask] - w*x[mask])
-    sum += np.dot(-x[mask^True], np.sign(x[mask^True])) * delta
+    sum += np.dot(-x[mask], diff[mask])
+    sum += np.dot(-x[~mask], np.sign(diff[~mask])) * delta
     return sum / len(x)
 
 def gdesc(start, gradient, eta):

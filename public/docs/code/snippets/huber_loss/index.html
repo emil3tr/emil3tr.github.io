@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Huber vs. Squared Loss – Emil Straschil</title>
-  <meta name="description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): mask = np.abs(y - x*w) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], y[mask] - w*x[mask]) sum &#43;= np.dot(-x[mask^True], np.sign(x[mask^True])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()" /><link rel="canonical" href="http://localhost:1313/docs/code/snippets/huber_loss/" itemprop="url" />
+  <meta name="description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): diff = y - x*w mask = np.abs(diff) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], diff[mask]) sum &#43;= np.dot(-x[~mask], np.sign(diff[~mask])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()" /><link rel="canonical" href="http://localhost:1313/docs/code/snippets/huber_loss/" itemprop="url" />
 
 <meta property="og:title" content="Huber vs. Squared Loss">
 <meta
@@ -31,10 +31,11 @@ def grad_squared_loss(x, w, y):
     return np.dot(-x, y - w*x) / len(x)
 
 def grad_huber_loss(x, w, y):
-    mask = np.abs(y - x*w) &lt;= delta
+    diff = y - x*w
+    mask = np.abs(diff) &lt;= delta
     sum = 0.0
-    sum &#43;= np.dot(-x[mask], y[mask] - w*x[mask])
-    sum &#43;= np.dot(-x[mask^True], np.sign(x[mask^True])) * delta
+    sum &#43;= np.dot(-x[mask], diff[mask])
+    sum &#43;= np.dot(-x[~mask], np.sign(diff[~mask])) * delta
     return sum / len(x)
 
 def gdesc(start, gradient, eta):
@@ -76,11 +77,11 @@ plt.show()
 
 
   <meta itemprop="name" content="Huber vs. Squared Loss">
-  <meta itemprop="description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): mask = np.abs(y - x*w) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], y[mask] - w*x[mask]) sum &#43;= np.dot(-x[mask^True], np.sign(x[mask^True])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()">
-  <meta itemprop="wordCount" content="126">
+  <meta itemprop="description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): diff = y - x*w mask = np.abs(diff) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], diff[mask]) sum &#43;= np.dot(-x[~mask], np.sign(diff[~mask])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()">
+  <meta itemprop="wordCount" content="127">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Huber vs. Squared Loss">
-  <meta name="twitter:description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): mask = np.abs(y - x*w) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], y[mask] - w*x[mask]) sum &#43;= np.dot(-x[mask^True], np.sign(x[mask^True])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()">
+  <meta name="twitter:description" content="huber_loss.pyimport matplotlib.pyplot as plt import numpy as np x = np.arange(-100, 101, 1, dtype=float) / 100.0 y = x.copy() y[-1] = 100 delta = 1 def grad_squared_loss(x, w, y): return np.dot(-x, y - w*x) / len(x) def grad_huber_loss(x, w, y): diff = y - x*w mask = np.abs(diff) &lt;= delta sum = 0.0 sum &#43;= np.dot(-x[mask], diff[mask]) sum &#43;= np.dot(-x[~mask], np.sign(diff[~mask])) * delta return sum / len(x) def gdesc(start, gradient, eta): last = start for i in range(200): start -= gradient(x, start, y) * eta if(np.abs(last - start) &lt; 1e-5): break last = start return start res_huber = gdesc(0, grad_huber_loss, 0.5) res_squared = gdesc(0, grad_squared_loss, 0.5) evalp = np.linspace(-1, 1, 100) plt.plot(evalp, evalp*res_huber, label=&#34;Huber Loss&#34;) plt.plot(evalp, evalp*res_squared, label=&#34;Squared Loss&#34;) plt.plot(x, y, label=&#34;Data&#34;) plt.plot(evalp, evalp, label=&#34;x=y&#34;) plt.legend() plt.show()">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -1462,10 +1463,11 @@ plt.show()
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>dot(<span style="color:#f92672">-</span>x, y <span style="color:#f92672">-</span> w<span style="color:#f92672">*</span>x) <span style="color:#f92672">/</span> len(x)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">grad_huber_loss</span>(x, w, y):
-</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>abs(y <span style="color:#f92672">-</span> x<span style="color:#f92672">*</span>w) <span style="color:#f92672">&lt;=</span> delta
+</span></span><span style="display:flex;"><span>    diff <span style="color:#f92672">=</span> y <span style="color:#f92672">-</span> x<span style="color:#f92672">*</span>w
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>abs(diff) <span style="color:#f92672">&lt;=</span> delta
 </span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
-</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>dot(<span style="color:#f92672">-</span>x[mask], y[mask] <span style="color:#f92672">-</span> w<span style="color:#f92672">*</span>x[mask])
-</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>dot(<span style="color:#f92672">-</span>x[mask<span style="color:#f92672">^</span><span style="color:#66d9ef">True</span>], np<span style="color:#f92672">.</span>sign(x[mask<span style="color:#f92672">^</span><span style="color:#66d9ef">True</span>])) <span style="color:#f92672">*</span> delta
+</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>dot(<span style="color:#f92672">-</span>x[mask], diff[mask])
+</span></span><span style="display:flex;"><span>    sum <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>dot(<span style="color:#f92672">-</span>x[<span style="color:#f92672">~</span>mask], np<span style="color:#f92672">.</span>sign(diff[<span style="color:#f92672">~</span>mask])) <span style="color:#f92672">*</span> delta
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum <span style="color:#f92672">/</span> len(x)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">gdesc</span>(start, gradient, eta):
