@@ -39,16 +39,9 @@ inline = [["\\(", "\\)"], ["$", "$"]]
 [[menu.main]]
   name = "Github"
   weight = 5
-  url = "https://github.com/emil3tr/emil3tr.github.io"
+  url = "https://github.com/emil3tr"
   [menu.main.params]
     icon = "github"
-
-[[menu.main]]
-  name = "Linkedin"
-  weight = 5
-  url = "https://www.linkedin.com/in/emil-straschil-a8a843335/"
-  [menu.main.params]
-    icon = "linkedin"
 
 [[menu.main]]
   name = "About"
