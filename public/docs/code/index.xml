@@ -23,7 +23,9 @@
       <description>
         
         
-        &lt;p&gt;I sometimes take part in competitive programming contests. You can find a repo with my solutions &lt;a href=&#34;https://github.com/emil3tr/competetive_programming&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. My codeforces handle is &lt;a href=&#34;https://codeforces.com/profile/floxi4&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;floxi4&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;I sometimes take part in competitive programming contests. You can find a repo with my solutions &lt;a
+    href=&#34;https://github.com/emil3tr/competetive_programming&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. My codeforces handle is &lt;a
+    href=&#34;https://codeforces.com/profile/floxi4&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;floxi4&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -45,7 +47,7 @@
           class=&#34;hextra-card-image&#34;
           loading=&#34;lazy&#34;
           decoding=&#34;async&#34;
-          src=&#34;http://localhost:1313/docs/code/snippets/huber_loss_hu_237a77999c8f79f.webp&#34;
+          src=&#34;http://localhost:1313/docs/code/snippets/huber_loss_hu_ac094eec02c9ea50.webp&#34;
           width=&#34;800&#34;
           height=&#34;600&#34;
           
@@ -58,7 +60,7 @@
           class=&#34;hextra-card-image&#34;
           loading=&#34;lazy&#34;
           decoding=&#34;async&#34;
-          src=&#34;http://localhost:1313/docs/code/snippets/adaptive_quadrature_hu_6287f9995e287631.webp&#34;
+          src=&#34;http://localhost:1313/docs/code/snippets/adaptive_quadrature_hu_279d3dc555c8afc9.webp&#34;
           width=&#34;800&#34;
           height=&#34;605&#34;
           
@@ -71,7 +73,7 @@
           class=&#34;hextra-card-image&#34;
           loading=&#34;lazy&#34;
           decoding=&#34;async&#34;
-          src=&#34;http://localhost:1313/docs/code/snippets/fourier_hu_a9084307c9da95c7.webp&#34;
+          src=&#34;http://localhost:1313/docs/code/snippets/fourier_hu_852661de9bccf2fa.webp&#34;
           width=&#34;800&#34;
           height=&#34;600&#34;
           
@@ -84,7 +86,7 @@
           class=&#34;hextra-card-image&#34;
           loading=&#34;lazy&#34;
           decoding=&#34;async&#34;
-          src=&#34;http://localhost:1313/docs/code/snippets/signal_filtering_hu_d3b50fd807780903.webp&#34;
+          src=&#34;http://localhost:1313/docs/code/snippets/signal_filtering_hu_3ada88757056103d.webp&#34;
           width=&#34;800&#34;
           height=&#34;600&#34;
           
@@ -97,7 +99,7 @@
           class=&#34;hextra-card-image&#34;
           loading=&#34;lazy&#34;
           decoding=&#34;async&#34;
-          src=&#34;http://localhost:1313/docs/code/snippets/tcp_congestion_control_hu_be44c28c534ee30f.webp&#34;
+          src=&#34;http://localhost:1313/docs/code/snippets/tcp_congestion_control_hu_cdaed314892d3e96.webp&#34;
           width=&#34;800&#34;
           height=&#34;600&#34;
           
