@@ -1,6 +1,6 @@
 ---
 title: Lecture Notes
-weight: 2
+weight: 3
 ---
 
 Here you can find some of my lecture notes from the courses I took at university.

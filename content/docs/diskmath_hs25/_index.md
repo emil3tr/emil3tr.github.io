@@ -1,6 +1,6 @@
 ---
-title: "Diskmath HS25 Teaching"
-weight: 1
+title: "Discmath HS25 Teaching"
+weight: 2
 ---
 
 The exercise class I teach takes place in CHN D48 on Mondays 16:15 - 18:00. It is held in german.

@@ -17,6 +17,12 @@ layout: hextra-home
 </div>
 
 {{< hextra/feature-grid >}}
+ {{< hextra/feature-card
+    title="Discmath Teaching 2026"
+    subtitle="You can find the materials for my exercise classes here."
+    link="docs/discmath_hs26"
+    icon="book-open"
+  >}}
   {{< hextra/feature-card
     title="Discmath Teaching 2025"
     subtitle="I worked as a teaching assistant for the Discrete Maths course in 2025. You can find the materials for my classes here."
