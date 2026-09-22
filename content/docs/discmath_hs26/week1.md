@@ -3,12 +3,6 @@ title: "Week 1 - Introduction"
 weight: 1
 ---
 
-Coming Soon ...
-
-## Resources
-
-Coming Soon ...
-
 ## Useful Links
 
 + [THE SCRIPT](https://crypto.ethz.ch/teaching/DM24/ln/DM24_LN_tablet.pdf) is your main rescource for the course.
@@ -19,7 +13,3 @@ Coming Soon ...
 + [eduapp](https://eduapp.ethz.ch/) shows your timetable and has a campus map.
 + The [ETH Videoportal](https://video.ethz.ch/) lets you watch the recorded lectures afterwards.
 + The [VIS website](https://vis.ethz.ch/) contains the **exam collection**.
-
-## Exercise Sheet Recommendations
-
-Coming Soon ...
